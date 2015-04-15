@@ -36,13 +36,13 @@ function deliver_mail() {
  
         // get the blog administrator's email address
         $to = get_option( 'admin_email' );
-        $args = [
-          'token_rdstation' => RD_STATION_TOKEN,
-          'identificador'   => RD_STATION_IDENTIFICACAO,
-          'email'           => $email,
-          'nome'            => $name,
-          'telefone'        => $telefone,
-        ];
+        $args = array (
+            'token_rdstation' => RD_STATION_TOKEN,
+            'identificador'   => RD_STATION_IDENTIFICACAO,
+            'email'           => $email,
+            'nome'            => $name,
+            'telefone'        => $telefone
+            );
  
         // Form Enviado
         if ( wp_remote_post(RD_STATION_API, $args)) {
