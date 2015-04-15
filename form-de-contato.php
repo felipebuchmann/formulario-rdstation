@@ -26,10 +26,10 @@ function html_form_code() {
  
 function deliver_mail() {
  
-    // if botão enviar clicado
+    // botão enviar
     if ( isset( $_POST['btn-enviar'] ) ) {
  
-        // sanitize valores
+        // sanitize
         $name     = sanitize_text_field( $_POST["input-nome"] );
         $email    = sanitize_email( $_POST["input-email"] );
         $telefone = sanitize_text_field( $_POST["telefone"] );
@@ -44,7 +44,7 @@ function deliver_mail() {
           'telefone'        => $telefone,
         ];
  
-        // If email enviado
+        // Form Enviado
         if ( wp_remote_post(RD_STATION_API, $args)) {
             echo '<div>';
             echo '<p>O Formulário foi enviado com sucesso!</p>';
