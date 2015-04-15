@@ -12,3 +12,9 @@ O plugin de formulário tem como padrão três inputs "Nome, Email e Telefone" j
 Estando dentro da raiz do WordPress, baixe o plugin para dentro da pasta wp-content através do Git:
 
 git clone https://github.com/felipebuchmann/formulario-rdstation wp-content/plug-ins/plugin-form
+
+Dentro do arquivo "wp-config.php" declare as constantes conforme exemplo abaixo logo após a constante "WP_DEBUG":
+
+define("RD_STATION_IDENTIFICACAO", "identificação"); 
+define("RD_STATION_TOKEN", "token"); 
+define("RD_STATION_API", "https://www.rdstation.com.br/api/1.2/conversions");
