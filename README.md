@@ -13,7 +13,7 @@ Default shortcode: [formulario_rd_station]
 
 === Installing ===
 
-Download the plugin into the wp-content folder via Git:
+Clone the Git repo on the worpress root folder:
 
 Command line:
 git clone https://github.com/felipebuchmann/formulario-rdstation wp-content / plugins / plugin-form
@@ -23,5 +23,7 @@ In "wp-config.php" file declare the following constants after "WP_DEBUG":
 define("RD_STATION_IDENTIFICACAO", "identificação"); 
 define("RD_STATION_TOKEN", "token"); 
 define("RD_STATION_API", "https://www.rdstation.com.br/api/1.2/conversions");
+
+Active plugin on worpress Plugin area.
 
 That's it!
